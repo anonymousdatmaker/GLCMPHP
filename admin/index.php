@@ -19,8 +19,14 @@
             case "user":
                 require_once "MasterUser/user.php";
             break;
+            case "editUser":
+                    require_once "MasterUser/editUser.php";
+            break;
             case "role":
                 require_once "MasterUser/role.php";
+            break;
+            case "editRole":
+                    require_once "MasterUser/editRole.php";
             break;
             case "userRole":
                 require_once "MasterUser/userRole.php";

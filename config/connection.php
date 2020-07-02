@@ -2,7 +2,7 @@
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $db = "glcm_master"; 
+    $db = "cnn_master"; 
     $conn = new mysqli($host,$user,$pass,$db);
     if(!$conn)
     {

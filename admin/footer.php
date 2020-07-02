@@ -50,6 +50,9 @@
 
     <!-- Custom Theme Scripts -->
     <script src="../assets/build/js/custom.min.js"></script>
+    <script src="../assets/src/js/user.js"></script>
+    <script src="../assets/src/js/role.js"></script>
+    
 	
   </body>
 </html>
