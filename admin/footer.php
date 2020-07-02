@@ -2,7 +2,7 @@
         <!-- footer content -->
         <footer>
           <div class="pull-right">
-            Computer Science  <a href="https://colorlib.com"> Admin</a>
+            Computer Science 2016 <a href="https://colorlib.com"> Admin</a>
           </div>
           <div class="clearfix"></div>
         </footer>
