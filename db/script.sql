@@ -61,3 +61,94 @@ INSERT INTO `user` (`Id`, `Name`, `Email`, `Username`, `Password`, `IdRole`, `Cr
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+--
+-- Table structure for table `datalatih`
+--
+
+CREATE TABLE `datalatih` (
+  `Id` int(11) NOT NULL,
+  `FileName` varchar(255) NOT NULL,
+  `CreatedBy` varchar(255) NOT NULL,
+  `CreatedAt` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `datalatih`
+--
+
+INSERT INTO `datalatih` (`Id`, `FileName`, `CreatedBy`, `CreatedAt`) VALUES
+(1, 'Screenshot (36).png', 'System', '2020-07-01 19:00:58');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `datalatih`
+--
+ALTER TABLE `datalatih`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `datalatih`
+--
+ALTER TABLE `datalatih`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `datalatih`
+--
+
+CREATE TABLE `datatesting` (
+  `Id` int(11) NOT NULL,
+  `FileName` varchar(255) NOT NULL,
+  `CreatedBy` varchar(255) NOT NULL,
+  `CreatedAt` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `datalatih`
+--
+
+INSERT INTO `datatesting` (`Id`, `FileName`, `CreatedBy`, `CreatedAt`) VALUES
+(1, 'Screenshot (36).png', 'System', '2020-07-01 19:00:58');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `datalatih`
+--
+ALTER TABLE `datatesting`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `datalatih`
+--
+ALTER TABLE `datatesting`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+-- testing
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
