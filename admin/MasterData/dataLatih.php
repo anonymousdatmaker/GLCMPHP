@@ -79,7 +79,9 @@
                                            <tbody>
                                                <?php
                                                 $querySelectImage =  mysqli_query($conn, "SELECT * FROM dataLatih");
-                                               
+                                                $queryCount =  mysqli_query($conn, "SELECT count(*) as sum FROM dataLatih");
+                                                $count = mysqli_fetch_array($queryCount);
+                                                if($count["sum"] >0):
                                                 foreach ($querySelectImage as $data) :
                                                 ?>
                                                    <tr>
@@ -94,7 +96,9 @@
                                                            <a data-id="<?= $data["Id"] ?>" data-role="delete" class="btn btn-danger text-light" title="Delete"><i class="fa fa-remove"></i></a>
                                                        </td>
                                                    </tr>
-                                               <?php endforeach; ?>
+                                               <?php endforeach;
+                                                    endif;
+                                               ?>
                                            </tbody>
                                        </table>
                                    </div>
